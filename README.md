@@ -1,86 +1,98 @@
 <h1 align="center">
-  URL-Shortner
+  Lynqo
 </h1>
 
-<h4 align="center">Creating custom URL shortener With Nodejs</h4>
+<h4 align="center">A custom URL shortening service built with Node.js</h4>
+
 <div align="center">
-  <sub>Built with ❤︎ </sub>
+  <sub>Built with ❤︎ using Node.js, Express.js, MongoDB & React</sub>
 </div>
 
-</br>
-Building a custom URL shortening service like goo.gl using ExpressJs and Mongodb
+<br>
+
+Lynqo is a custom URL shortening platform that allows users to convert long URLs into short, easy-to-share links. It is built using **Node.js, Express.js, MongoDB, and React**, with Nginx used as a web server.
 
 ## Architecture
 
-<img src="sketch/architecture.png" alt="architecture" />
+<img src="sketch/architecture.png" alt="Lynqo Architecture" />
 
 ## Technologies
 
-- ### Back end
+### Back End
 
-  - [Express](https://expressjs.com/)- Nodejs framwork for building the REST Apis
-  - [Mongodb](http://mongodb.com/)- Document oriented NoSQL database
-  - [Mongoose](https://http://mongoosejs.com)- MongoDB object modeling tool
-  - [Short-id](https://github.com/dylang/shortid)- Short id generator
-  - [Valid-url](https://github.com/ogt/valid-url)- URI validation functions
-  - [Nginx](https://www.nginx.com)- Nginx is event-based and asynchronous web server.
+* **[Express.js](https://expressjs.com/)** — Node.js framework for building REST APIs
+* **[MongoDB](https://www.mongodb.com/)** — Document-oriented NoSQL database
+* **[Mongoose](https://mongoosejs.com/)** — MongoDB object modeling tool
+* **[Short-ID](https://github.com/dylang/shortid)** — Short ID generator
+* **[Valid-URL](https://github.com/ogt/valid-url)** — URL validation functions
+* **[Nginx](https://www.nginx.com/)** — High-performance web server
 
-- ### Front end
+### Front End
 
-  - [React](https://reactjs.org/) - JavaScript library for building user interfaces.
-  - [React-router](https://github.com/ReactTraining/react-router)- Complete routing library for React
-  - [Materialize css](http://materializecss.com/)- Responsive front-end framework based on Material Design
+* **[React](https://react.dev/)** — JavaScript library for building user interfaces
+* **[React Router](https://reactrouter.com/)** — Routing library for React applications
+* **[Materialize CSS](https://materializecss.com/)** — Responsive front-end framework based on Material Design
 
 ## Getting Started
 
-#### Clone the project
+### Clone the Project
 
-```sh
-# clone it
-git clone https://github.com/muhzi4u/URL-Shortner.git
-cd URL-Shortner
-# Make it your own
-rm -rf .git && git init
+```bash
+git clone https://github.com/Aditi-018/lynqo.git
+cd lynqo
 ```
 
-#### Run back end
+### Run the Back End
 
-```
-# Move to server folder
+```bash
 cd server/
-# Install dependencies
 yarn install
-
-# Start  server
 yarn run server
 ```
 
-#### Run front end
+### Run the Front End
 
-```
-# Move to client folder
+Open a new terminal:
+
+```bash
 cd client/
-# Install dependencies
 yarn install
-# Start  client
 yarn run start
 ```
 
-## Demo
+## Project Structure
 
-![NSGIF](https://j.gifs.com/1rnQV0.gif)
+```text
+Lynqo/
+├── client/          # React frontend
+├── server/          # Node.js + Express backend
+├── nginx/           # Nginx configuration
+├── sketch/          # Architecture and project diagrams
+├── .gitignore
+└── README.md
+```
 
-## Blog
+## Features
 
-[Creating custom URL shortener with Nodejs](https://codeburst.io/creating-custom-url-shortener-with-nodejs-de10bbbb89c7)
+* 🔗 Convert long URLs into short links
+* ⚡ Fast URL redirection
+* ✅ URL validation
+* 🗄️ MongoDB-based data storage
+* 🎨 React-based frontend
+* 🚀 Express.js REST API
+* 🌐 Nginx configuration for deployment
 
-## ☑ TODO
+## Future Improvements
 
-- [x] Front end app
-- [x] Documentation and Blog
-- [x] Add Redis for caching
-- [ ] Change short code algorithm and check duplicate short codes
+* [x] Frontend application
+* [x] Documentation
+* [x] Redis caching
+* [ ] Improve short-code generation algorithm
+* [ ] Add duplicate short-code prevention
+* [ ] Add analytics for shortened URLs
+* [ ] Add click tracking
+* [ ] Add user authentication
 
 ## License
 
-MIT
+This project is licensed under the **MIT License**.
