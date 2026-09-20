@@ -20,7 +20,7 @@ class App extends Component {
         </BrowserRouter>
         <div className="footer">
           Built by{" "}
-          <a target="_blank" href="http://muhzi.com">
+          <a target="_blank" rel="noopener noreferrer" href="http://muhzi.com">
             Muhsin.K
           </a>© 2018
         </div>
